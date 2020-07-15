@@ -1,0 +1,3092 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /* IE 6 7 专有*/
+    *zoom: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    /* 为了兼容低版本浏览器，如果外面包含了链接会有边框问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* 以上为初始化样式 */
+
+
+#shotcut {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+}
+
+#shotcut .navgation {
+    position: relative;
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#shotcut .navgation .navfl {
+    float: left;
+}
+
+#shotcut .navgation .navfr {
+    float: right;
+}
+
+#shotcut .navgation .navfl .navfl-li {
+    position: relative;
+    height: 30px;
+    width: 58px;
+    border: 1px solid transparent;
+    z-index: 21;
+}
+
+#shotcut .navgation .navfl .navfl-li .dd .dd-1 .seaon:hover {
+    background-color: #f10215;
+    color: white;
+}
+
+#shotcut .navgation .navfl .seaon {
+    background-color: #f10215;
+    color: white;
+}
+
+#shotcut .navgation .navfl li .add {
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 30px;
+    text-align: center;
+    z-index: 10;
+}
+
+#shotcut .navgation .navfl span {
+    font-size: 12px;
+}
+
+#shotcut .navgation .navfl .icon-dizhi {
+    font-size: 14px;
+    color: #f10215;
+}
+
+#shotcut .navgation .navfl .navfl-li:hover {
+    border: 1px solid #e3e4e5;
+    background-color: #fff;
+    border-color: #ccc;
+    border-bottom: none;
+}
+
+#shotcut .navgation .navfl .add:hover {
+    color: #f10215;
+}
+
+#shotcut .navgation .navfl .navfl-li:hover .dd {
+    display: block;
+}
+
+#shotcut .navgation .navfl .dd {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 29px;
+    padding: 10px;
+    width: 322px;
+    height: 425px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+    z-index: 9;
+}
+
+#shotcut .navgation .navfl .dd .dd-1 .item {
+    float: left;
+    width: 60px;
+    height: 28px;
+    padding: 2px 0;
+    font-size: 12px;
+}
+
+#shotcut .navgation .navfl .dd .dd-1 .item a {
+    display: inline-block;
+    height: 24px;
+    padding: 0 8px;
+}
+
+#shotcut .navgation .navfl .dd .dd-1 .item a:hover {
+    color: #e33333;
+    background-color: #f4f4f4;
+}
+
+#shotcut .navgation .navfl .dd .dotted {
+    position: absolute;
+    top: 220px;
+    left: 18px;
+    height: 1px;
+    width: 263px;
+    border: 1px dotted #eeeeee;
+}
+
+#shotcut .navgation .navfl .dd .dd-2 {
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+#shotcut .navgation .navfl .dd p {
+    padding: 8px 0px 0px 7px;
+    font-size: 12px;
+}
+
+#shotcut .navgation .navfl .dd p:nth-child(2):hover {
+    color: #e33333;
+    cursor: pointer;
+}
+
+#shotcut .navgation .navfl .dd .dotted2 {
+    top: 293px;
+}
+
+#shotcut .navgation .navfl .dd .dd-3 {
+    font-size: 12px;
+}
+
+#shotcut .navgation .navfl .dd .dd-3 ul li {
+    float: left;
+    margin: 3px 37px 0px 0px;
+
+}
+
+#shotcut .navgation .navfl .dd .dd-3 ul li:hover {
+    color: #e33333;
+    cursor: pointer;
+}
+
+#shotcut .navgation .navfl .dd .dd-3 ul li:nth-child(2) {
+    margin-left: 23px;
+}
+
+#shotcut .navgation .navfl .dd .dd-3 div {
+    float: left;
+    vertical-align: middle;
+}
+
+#shotcut .navgation .navfl .dd .dd-3 .cpng {
+    width: 17px;
+    height: 14px;
+    margin: 6px 0px 0px 8px;
+
+}
+
+#shotcut .navgation .navfl .dd .dd-3 li:nth-child(1) .cpng {
+    background: url("../img/contry.png") no-repeat;
+}
+
+#shotcut .navgation .navfl .dd .dd-3 li:nth-child(2) .cpng {
+    background: url("../img/contry.png") no-repeat -20px -16px;
+}
+
+#shotcut .navgation .navfl .dd .dd-3 li:nth-child(3) .cpng {
+    background: url("../img/contry.png") no-repeat 0px -15px;
+}
+
+#shotcut .navgation .navfl .dd .dd-3 li:nth-child(4) .cpng {
+    background: url("../img/contry.png") no-repeat -40px 2px;
+}
+
+#shotcut .navgation .navfl .dd .dd-3 li:nth-child(5) .cpng {
+    background: url("../img/contry.png") no-repeat -19px 0px;
+}
+
+#shotcut .navgation .navfr li {
+    float: left;
+    font-size: 12px;
+}
+
+#shotcut .navgation .navfr li:nth-child(1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#shotcut .navgation .navfr .icf:nth-child(-n+7):hover .hfc {
+    color: #e33333;
+}
+
+#shotcut .navgation .navfr .fred {
+    color: #ff0000;
+}
+
+#shotcut .navgation .navfr li .iconfont {
+    font-size: 10px;
+}
+
+#shotcut .navgation .navfr .ic {
+    margin: 0px 3px 0px 3px;
+    color: #cccccc;
+}
+
+#shotcut .navgation .navfr .icf {
+    position: relative;
+    padding: 0px 9px 0px 9px;
+}
+
+#shotcut .navgation .navfr .myjdli {
+    height: 30px;
+    border: 1px solid transparent;
+}
+
+#shotcut .navgation .navfr .myjdli:hover {
+    border: 1px solid #e3e4e5;
+    background-color: #fff;
+    border-color: #ccc;
+    border-bottom: none;
+}
+
+#shotcut .navgation .navfr .myjdli:hover .myjdlist {
+    display: block;
+}
+
+#shotcut .navgation .navfr .icf .myjdlist {
+    display: none;
+    position: absolute;
+    top: 29px;
+    left: -1px;
+    width: 235px;
+    height: 163px;
+    border: 1px solid #cccccc;
+    border-top: none;
+    background-color: #ffffff;
+    z-index: 9;
+}
+
+#shotcut .navgation .navfr .icf .myjdlist .fore1 div,
+#shotcut .navgation .navfr .icf .myjdlist .fore2 div {
+    float: left;
+}
+
+#shotcut .navgation .navfr .icf .myjdlist .fore1,
+#shotcut .navgation .navfr .icf .myjdlist .fore2 {
+    padding: 3px 0px 3px 17px;
+}
+
+#shotcut .navgation .navfr .icf .myjdlist .f-2 {
+    margin-left: 60px;
+}
+
+#shotcut .navgation .navfr .icf .myjdlist .fore2 .f-2 {
+    margin-left: 72px;
+}
+
+#shotcut .navgation .navfr .icf .myjdlist .fore2 {
+    border-top: 1px solid #f1f1f1;
+}
+
+#shotcut .navgation .navfr .icf .myjdlist li {
+    float: none;
+}
+
+#shotcut .navgation .navfr .icf .myjdlist li:hover {
+    cursor: pointer;
+    color: #e33333;
+}
+
+#shotcut .navgation .navfr .icf .firm {
+    display: none;
+    position: absolute;
+    top: 29px;
+    left: -1px;
+    height: 70px;
+    width: 140px;
+    padding: 10px 0 10px 15px;
+    border: 1px solid #cccccc;
+    border-top: none;
+    background-color: #ffffff;
+    color: #9d9d9d;
+    z-index: 9;
+}
+
+#shotcut .navgation .navfr .icf .firm div {
+    display: inline-block;
+
+}
+
+#shotcut .navgation .navfr .icf .firm .d-2 {
+    margin-left: 16px;
+}
+
+#shotcut .navgation .navfr .firmbuy {
+    height: 30px;
+    border: 1px solid transparent;
+}
+
+#shotcut .navgation .navfr .firmbuy a:hover {
+    color: #e33333;
+}
+
+#shotcut .navgation .navfr .firmbuy:hover {
+    border: 1px solid #e3e4e5;
+    background-color: #fff;
+    border-color: #ccc;
+    border-bottom: none;
+}
+
+#shotcut .navgation .navfr .firmbuy:hover .firm {
+    display: block;
+}
+
+#shotcut .navgation .navfr .cusfor {
+    display: none;
+    position: absolute;
+    top: 29px;
+    right: -1px;
+    height: 250px;
+    width: 170px;
+    border: 1px solid #cccccc;
+    border-top: none;
+    background-color: #ffffff;
+}
+
+#shotcut .navgation .navfr .cusfor li {
+    float: none;
+}
+
+#shotcut .navgation .navfr .cusfor .c-1 div,
+#shotcut .navgation .navfr .cusfor .c-2 div {
+    float: left;
+    margin-top: -6px;
+    padding: 0px 0px 0px 10px;
+}
+
+#shotcut .navgation .navfr .cusfor li {
+    height: 22px;
+}
+
+#shotcut .navgation .navfr .cusfor li:hover {
+    cursor: pointer;
+    color: #e33333;
+}
+
+#shotcut .navgation .navfr .cusfor h4 {
+    font-weight: 700;
+    color: #787878;
+    padding: 0px 0px 0px 10px;
+}
+
+#shotcut .navgation .navfr .cusfor .c-2 {
+    margin-top: 20px;
+    border-top: 1px solid #f1f1f1;
+}
+
+#shotcut .navgation .navfr .cusfor .c-1-1,
+#shotcut .navgation .navfr .cusfor .c-2-1 {
+    margin-left: 20px;
+}
+
+#shotcut .navgation .navfr .cusforser {
+    height: 30px;
+    border: 1px solid transparent;
+    z-index: 9;
+}
+
+#shotcut .navgation .navfr .cusforser:hover .cusfor {
+    display: block;
+}
+
+#shotcut .navgation .navfr .cusforser:hover {
+    border: 1px solid #e3e4e5;
+    background-color: #fff;
+    border-color: #ccc;
+    border-bottom: none;
+}
+
+#shotcut .navgation .navfr .guide {
+    height: 30px;
+    border: 1px solid transparent;
+    z-index: 9;
+}
+
+#shotcut .navgation .navfr .guide:hover {
+    border: 1px solid #e3e4e5;
+    background-color: #fff;
+    border-color: #ccc;
+    border-bottom: none;
+}
+
+#shotcut .navgation .navfr .guide:hover .guidelist {
+    display: block;
+}
+
+#shotcut .navgation .navfr .guide .guidelist {
+    display: none;
+    position: absolute;
+    top: 29px;
+    right: -77px;
+    height: 180px;
+    width: 1190px;
+    border: 1px solid #cccccc;
+    border-top: none;
+    background-color: #ffffff;
+}
+
+#shotcut .navgation .navfr .guide .guidelist h4 {
+    color: #6f6f6f;
+    padding-left: 23px;
+}
+
+#shotcut .navgation .navfr .guide .guidelist div {
+
+    margin-top: 15px;
+    padding-right: 10px;
+    float: left;
+}
+
+#shotcut .navgation .navfr .guide .guidelist div:nth-child(-n+3) {
+    border-right: 1px solid #eeeeee;
+}
+
+#shotcut .navgation .navfr .guide .guidelist div ul {
+    float: left;
+}
+
+#shotcut .navgation .navfr .guide .guidelist li {
+    height: 24px;
+    margin-left: 23px;
+    line-height: 24px;
+    float: none;
+}
+
+#shotcut .navgation .navfr .guide .guidelist li:hover {
+    color: #e33333;
+    cursor: pointer;
+}
+
+#shotcut .navgation .navfr .phopay:hover .payi {
+    display: block;
+}
+
+#shotcut .navgation .navfr .phopay .payi {
+    display: none;
+    width: 192px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    right: -1px;
+    padding: 8px 0px 0px 10px;
+    border: 1px solid #cccccc;
+    border-top: none;
+    background-color: #ffffff;
+    z-index: 9;
+}
+
+#shotcut .navgation .navfr .phopay .payi i {
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    top: -11px;
+    width: 0px;
+    height: 0px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+#shotcut .navgation .navfr .phopay .payi div {
+    float: left;
+}
+
+#shotcut .navgation .navfr .phopay .wxzf img {
+    width: 80px;
+    height: 80px;
+}
+
+#shotcut .navgation .navfr .phopay .wxfon p {
+    height: 27px;
+}
+
+#shotcut .navgation .navfr .phopay .wxfon {
+    margin-left: 10px;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* 上面是顶部导航栏样式 */
+
+#header {
+    height: 140px;
+    background-color: #ffffff;
+}
+
+#header .headw {
+    height: 140px;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+#header .headw div {
+    float: left;
+    margin-left: 11px;
+}
+
+#header .headw .jdmk,
+#header .headw .bkmk {
+    position: relative;
+    width: 190px;
+    height: 120px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+#header .headw .jdmk a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#header .headw .jdmk a img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#header .headw .jdmk .ochange {
+    opacity: 1;
+}
+
+#header .headw .jdmk a p {
+    position: absolute;
+    left: 69px;
+    top: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #e1251b;
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 15px;
+}
+
+#header .headw .jdmk a p:hover {
+    cursor: pointer;
+    background-color: rgba(225, 37, 27, 0.5);
+    color: white;
+}
+
+#header .headw .searchInfo {
+    position: relative;
+    width: 762px;
+    height: 140px;
+}
+
+#header .headw .searchInfo .searchi .searchtxt,
+#header .headw .searchInfo .searchi .car {
+    float: left;
+}
+
+#header .headw .searchInfo .searchi {
+    margin-top: 25px;
+    padding-left: 40px;
+}
+
+#header .headw .searchInfo .searchi .searchtxt {
+    position: relative;
+    border: 2px solid #e2231a;
+    width: 550px;
+    height: 36px;
+}
+
+#header .headw .searchInfo .searchi .searchtxt input {
+    text-indent: 1.2em;
+    border: none;
+    width: 480px;
+    height: 32px;
+    outline-style: none;
+}
+
+#header .headw .searchInfo .searchi .searchtxt span {
+    position: absolute;
+    right: 75px;
+    top: 3px;
+    font-size: 18px;
+    color: #c9c9c9;
+}
+
+#header .headw .searchInfo .searchi .searchtxt span:hover {
+    color: #d54c56;
+    cursor: pointer;
+}
+
+#header .headw .searchInfo .searchi .searchtxt i {
+    float: right;
+    width: 58px;
+    height: 32px;
+    font-weight: 700;
+    color: white;
+    padding: 3px 20px;
+    font-size: 18px;
+    background-color: #e1251b;
+}
+
+#header .headw .searchInfo .searchi .searchtxt i:hover {
+    cursor: pointer;
+    background-color: #c81623;
+    transition: 0.5s;
+}
+
+#header .headw .searchInfo .searchi .car {
+    position: relative;
+    width: 132px;
+    height: 37px;
+    padding: 6px 0px 0px 18px;
+    font-size: 12px;
+    color: #e3362d;
+    border: 1px solid #eeeeee;
+}
+
+#header .headw .searchInfo .searchi .car div {
+    margin-left: 0px;
+}
+
+#header .headw .searchInfo .searchi .car a {
+    margin-left: 12px;
+}
+
+#header .headw .searchInfo .searchi .car .c0 {
+    display: inline-block;
+    width: 18px;
+    position: absolute;
+    top: 1px;
+    left: 29px;
+    text-align: center;
+    padding: 1px 3px;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 12px;
+    color: #fff;
+    background-color: #e1251b;
+    border-radius: 7px;
+    min-width: 12px;
+    text-align: center;
+}
+
+#header .headw .searchInfo .searchi .car:hover {
+    border: 1px solid #c81623;
+    border-bottom: none;
+}
+
+#header .headw .searchInfo .searchi .car:hover .car-2 {
+    display: block;
+}
+
+#header .headw .searchInfo .searchi .car .car-2 {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: -1px;
+    width: 310px;
+    height: 70px;
+    background: #ffffff url("../img/kongche.png") no-repeat 30px 10px;
+    border: 1px solid #c81623;
+    border-top: none;
+    z-index: 2;
+}
+
+#header .headw .searchInfo .searchi .car .car-2 p {
+    color: #999999;
+    margin: 30px 0px 0px 84px;
+}
+
+#header .headw .searchInfo .searchi .spro a {
+    font-size: 12px;
+    color: #999;
+    margin-right: 10px;
+}
+
+#header .headw .searchInfo .searchi .spro a:hover {
+    color: #e1251b;
+}
+
+#header .headw .searchInfo .searchNav {
+    position: absolute;
+    bottom: 0;
+    width: 750px;
+    height: 40px;
+}
+
+#header .headw .searchInfo .searchNav ul li:nth-child(1) {
+    margin-left: 2px;
+}
+
+#header .headw .searchInfo .searchNav ul li:nth-child(1),
+#header .headw .searchInfo .searchNav ul li:nth-child(2) {
+    font-weight: 700;
+    color: #e1251b;
+}
+
+#header .headw .searchInfo .searchNav ul li a:hover {
+    color: #d44852;
+}
+
+#header .headw .searchInfo .searchNav ul li {
+    float: left;
+    font-size: 15px;
+    line-height: 40px;
+    margin: 0px 11px;
+}
+
+/* 以上为搜索栏的全部样式！ */
+
+#recinfo {
+    height: 480px;
+    background: url(../img/bjtp.png) 50% 0px no-repeat;
+}
+
+#recinfo .infomain {
+    width: 1190px;
+    height: 480px;
+    margin: auto;
+    padding: 10px 0px 0px 0px;
+}
+
+#recinfo .infomain .ibox {
+    float: left;
+    height: 470px;
+}
+
+#recinfo .infomain .ibox:nth-child(1),
+#recinfo .infomain .ibox:nth-child(2) {
+    margin-right: 10px;
+}
+
+#recinfo .infomain .infoL {
+    position: relative;
+    width: 190px;
+    background-color: white;
+}
+
+#recinfo .infomain .infoL .infoUl {
+    padding: 10px 0px;
+}
+
+#recinfo .infomain .infoL .infoUl li {
+    width: 190px;
+    height: 25px;
+    line-height: 25px;
+    color: #333333;
+    padding-left: 18px;
+    font-size: 14px;
+}
+
+#recinfo .infomain .infoL .infoUl li a:hover {
+    color: #c81623;
+}
+
+#recinfo .infomain .infoL .infoUl li:hover {
+    background-color: #d9d9d9;
+}
+
+#recinfo .infomain .infoL .infoUl li:nth-child(1):hover .info1,
+#recinfo .infomain .infoL .infoUl li:nth-child(2):hover .info2,
+#recinfo .infomain .infoL .infoUl li:nth-child(3):hover .info3,
+#recinfo .infomain .infoL .infoUl li:nth-child(4):hover .info4,
+#recinfo .infomain .infoL .infoUl li:nth-child(5):hover .info5,
+#recinfo .infomain .infoL .infoUl li:nth-child(6):hover .info6,
+#recinfo .infomain .infoL .infoUl li:nth-child(7):hover .info7,
+#recinfo .infomain .infoL .infoUl li:nth-child(8):hover .info8,
+#recinfo .infomain .infoL .infoUl li:nth-child(9):hover .info9,
+#recinfo .infomain .infoL .infoUl li:nth-child(10):hover .info10,
+#recinfo .infomain .infoL .infoUl li:nth-child(11):hover .info11,
+#recinfo .infomain .infoL .infoUl li:nth-child(12):hover .info12,
+#recinfo .infomain .infoL .infoUl li:nth-child(13):hover .info13,
+#recinfo .infomain .infoL .infoUl li:nth-child(14):hover .info14,
+#recinfo .infomain .infoL .infoUl li:nth-child(15):hover .info15,
+#recinfo .infomain .infoL .infoUl li:nth-child(16):hover .info16,
+#recinfo .infomain .infoL .infoUl li:nth-child(17):hover .info17,
+#recinfo .infomain .infoL .infoUl li:nth-child(18):hover .info18 {
+    display: block;
+}
+
+#recinfo .infomain .infoL .infoList {
+    display: none;
+    position: absolute;
+    left: 190px;
+    top: 0;
+    width: 998px;
+    min-height: 470px;
+    border: 1px solid #f7f7f7;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+    transition: top .25s ease;
+    z-index: 8;
+}
+
+#recinfo .infomain .infoL .infoList .bs {
+    position: relative;
+    width: 800px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+#recinfo .infomain .infoL .infoList .bs li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#recinfo .infomain .infoL .infoList .bs li a:hover {
+    background-color: #c81623;
+    color: white;
+}
+
+#recinfo .infomain .infoL .infoList .bs li {
+    float: left;
+    width: 73px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #333333;
+    color: white;
+    margin-left: 10px;
+    padding-left: 0;
+    font-size: 12px;
+}
+
+#recinfo .infomain .infoL .infoList .bs .blist dt {
+    width: 70px;
+    font-weight: 700;
+    text-align: right
+}
+
+#recinfo .infomain .infoL .infoList .bs .blist dt i {
+    margin-left: 5px;
+}
+
+#recinfo .infomain .infoL .infoList .bs .blist dd,
+#recinfo .infomain .infoL .infoList .bs .blist dt {
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#recinfo .infomain .infoL .infoList .bs .blist dd a {
+    margin-left: 15px;
+}
+
+#recinfo .infomain .infoL .infoList .bs .blist dd a:hover,
+#recinfo .infomain .infoL .infoList .bs .blist dt:hover {
+    color: #cf323e;
+}
+
+#recinfo .infomain .infoL .infoList .bs .blist dd {
+    width: 680px;
+    padding-right: 2px;
+}
+
+#recinfo .infomain .infoL .infoList .bs .bsimg {
+    position: absolute;
+    top: 20px;
+    right: -197px;
+    padding-left: 15px;
+    width: 198px;
+    height: 424px;
+}
+
+#recinfo .infomain .infoL .infoList .bs .bsimg img {
+    margin-top: 1px;
+}
+
+#recinfo .infomain .infoM {
+    width: 790px;
+}
+
+#recinfo .infomain .infoM .banLeft,
+#recinfo .infomain .infoM .banRight {
+    float: left;
+}
+
+#recinfo .infomain .infoM .banLeft {
+    position: relative;
+    width: 590px;
+    height: 470px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+#recinfo .infomain .infoM .banLeft p {
+    position: absolute;
+    top: calc(50% - 25px);
+    width: 25px;
+    height: 35px;
+    color: white;
+    padding: 0px 0px 0px 5px;
+    line-height: 35px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+#recinfo .infomain .infoM .banLeft p:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#recinfo .infomain .infoM .banLeft .bL {
+    left: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#recinfo .infomain .infoM .banLeft .bR {
+    right: 0;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#recinfo .infomain .infoM .banLeft .banUl {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+#recinfo .infomain .infoM .banLeft .banUl li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .05);
+    background: rgba(255, 255, 255, .4);
+}
+
+#recinfo .infomain .infoM .banLeft .banUl .on {
+    width: 9px;
+    height: 9px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    box-sizing: inherit;
+    background-color: rgba(255, 255, 255, 0.877);
+}
+
+#recinfo .infomain .infoM .banLeft .banOn {
+    opacity: 1;
+}
+
+#recinfo .infomain .infoM .banLeft img {
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 以上为轮播图样式 */
+#recinfo .infomain .infoM .banRight {
+    position: relative;
+    width: 190px;
+    height: 470px;
+    overflow: hidden;
+}
+
+#recinfo .infomain .infoM .banRight .wban {
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+
+#recinfo .infomain .infoM .banRight .bmg {
+    float: left;
+    width: 190px;
+    height: 470px;
+}
+
+#recinfo .infomain .infoM .banRight .bmg img {
+    width: 190px;
+    height: 150px;
+}
+
+#recinfo .infomain .infoM .banRight .bmg a:nth-child(3),
+#recinfo .infomain .infoM .banRight .bmg a:nth-child(2) {
+    display: inline-block;
+
+    margin-top: 10px;
+}
+
+#recinfo .infomain .infoM .banRight:hover p {
+    display: block;
+}
+
+#recinfo .infomain .infoM .banRight p {
+    display: none;
+    position: absolute;
+    top: calc(50% - 25px);
+    width: 25px;
+    height: 35px;
+    color: white;
+    padding: 0px 0px 0px 5px;
+    line-height: 35px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .15);
+    z-index: 6;
+}
+
+#recinfo .infomain .infoM .banRight p:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#recinfo .infomain .infoM .banRight .bL {
+    left: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#recinfo .infomain .infoM .banRight .bR {
+    right: 0;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#recinfo .infomain .infoR {
+    width: 190px;
+    background-color: #ffffff;
+}
+
+#recinfo .infomain .infoR .juser {
+    position: relative;
+    width: 190px;
+    height: 100px;
+    padding: 10px 0px 0px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#recinfo .infomain .infoR .juser .logo img {
+    width: 44px;
+    height: 44px;
+}
+
+#recinfo .infomain .infoR .juser .logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#recinfo .infomain .infoR .juser .logefont,
+#recinfo .infomain .infoR .juser .logo {
+    float: left;
+    color: #666666;
+    font-size: 12px;
+}
+
+#recinfo .infomain .infoR .juser .logefont a:hover {
+    color: #c81623;
+}
+
+#recinfo .infomain .infoR .juser .logefont {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 106px;
+    height: 38px;
+}
+
+#recinfo .infomain .infoR .juser .henter p:nth-child(2) {
+    background: #363634;
+    color: #e5d790;
+    margin: 0 5px;
+}
+
+#recinfo .infomain .infoR .juser .henter p:hover {
+    background-color: #c81623;
+    color: #fff;
+}
+
+#recinfo .infomain .infoR .juser .henter {
+    position: absolute;
+    bottom: 10px;
+    width: 190px;
+    height: 25px;
+}
+
+#recinfo .infomain .infoR .juser .henter p {
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 13px;
+    color: #fff;
+    background-color: #e1251b;
+    ;
+}
+
+#recinfo .infomain .infoR .jnews {
+    width: 190px;
+    height: 130px;
+    padding: 15px 15px 0px 0px;
+    font-size: 12px;
+    color: #666666;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#recinfo .infomain .infoR .jnews a:hover {
+    color: #c81623;
+}
+
+#recinfo .infomain .infoR .jnews .more {
+    float: right;
+}
+
+#recinfo .infomain .infoR .jnews .newsd {
+    width: 160px;
+    height: 88px;
+    margin-left: 15px;
+}
+
+#recinfo .infomain .infoR .jnews .newsd .d {
+    float: left;
+}
+
+#recinfo .infomain .infoR .jnews .newsd dl {
+    width: 160px;
+    height: 16px;
+    margin-bottom: 6px;
+}
+
+#recinfo .infomain .infoR .jnews .newsd dt {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    height: 16px;
+    width: 35px;
+    line-height: 16px;
+    text-align: center;
+    color: #e1251b;
+    background-color: rgba(225, 37, 27, .08);
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+#recinfo .infomain .infoR .jnews .newsd dd {
+    width: 118px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#recinfo .infomain .infoR .jentry {
+    position: relative;
+    width: 190px;
+    height: 240px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+#recinfo .infomain .infoR .jentry .jdesc {
+    position: absolute;
+    bottom: -213px;
+    left: 0px;
+    z-index: 10;
+    width: 189px;
+    height: 213px;
+    padding: 0 15px 0;
+    background: #ffffff;
+    transition: all ease .3s;
+}
+
+#recinfo .infomain .infoR .jentry .jdesc .cancel {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+#recinfo .infomain .infoR .jentry .jdesc .cancel a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #a3a3a3;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#recinfo .infomain .infoR .jentry .jdesc .cancel a:hover {
+    color: #fff;
+    background-color: #c81623;
+}
+
+#recinfo .infomain .infoR .jentry .jdesc .huafei>div {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#recinfo .infomain .infoR .jentry .jdesc .pnumber input,
+#recinfo .infomain .infoR .jentry .jdesc .pvalue select {
+    margin-left: 8px;
+}
+
+#recinfo .infomain .infoR .jentry ul {
+    width: 189px;
+    height: 230px;
+    transition: all ease .3s;
+}
+
+#recinfo .infomain .infoR .jentry ul li {
+    float: left;
+    width: 63px;
+    height: 55px;
+    text-align: center;
+    transition: color .15s ease;
+}
+
+#recinfo .infomain .infoR .jentry ul li:hover {
+    color: #c81724;
+}
+
+#recinfo .infomain .infoR .jentry ul li:hover span {
+    color: #c81724;
+}
+
+#recinfo .infomain .infoR .jentry ul li:hover i {
+    color: #c81724;
+}
+
+#recinfo .infomain .infoR .jentry ul li i {
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+#recinfo .infomain .infoR .jentry i:nth-child(1) {
+    color: #5aaae5;
+}
+
+#recinfo .infomain .infoR .jentry li:nth-child(2) i {
+    color: #f2a234;
+}
+
+#recinfo .infomain .infoR .jentry li:nth-child(3) i {
+    color: #41d7c7;
+}
+
+#recinfo .infomain .infoR .jentry li:nth-child(4) i {
+    color: #f3a944;
+}
+
+#recinfo .infomain .infoR .jentry li:nth-child(5) i {
+    color: #46d8c8;
+}
+
+#recinfo .infomain .infoR .jentry li:nth-child(6) i {
+    color: #eb675e;
+}
+
+#recinfo .infomain .infoR .jentry li:nth-child(7) i {
+    color: #41d7c7;
+}
+
+#recinfo .infomain .infoR .jentry li:nth-child(8) i {
+    color: #5aaae5;
+}
+
+#recinfo .infomain .infoR .jentry li:nth-child(9) i {
+    color: #eb675e;
+}
+
+#recinfo .infomain .infoR .jentry li:nth-child(10) i {
+    color: #eb675e;
+}
+
+#recinfo .infomain .infoR .jentry li:nth-child(11) i {
+    color: #5aaae5;
+}
+
+#recinfo .infomain .infoR .jentry ul li:nth-child(12) i {
+    color: #f2a235;
+}
+
+#recinfo .infomain .infoR .jentry ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#recinfo .infomain .infoR .jentry ul li span {
+    display: inline-block;
+    height: 20px;
+    line-height: 15px;
+    border-bottom: 2px solid #fff;
+    color: #333333;
+}
+
+/* 以上为中间轮播图以及信息导航栏部分样式 */
+#app {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    margin-top: 30px;
+}
+
+#app .jdms {
+    position: relative;
+    width: 1190px;
+    height: 260px;
+    background-color: white;
+    margin: auto;
+}
+
+#app .jdms .ms {
+    float: left;
+}
+
+#app .jdms .mstime {
+    width: 190px;
+    height: 260px;
+    color: #fff;
+    background: url("../img/miaosha.png") no-repeat;
+}
+
+#app .jdms .mstime h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 31px;
+}
+
+#app .jdms .mstime p {
+    margin-top: 90px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#app .jdms .mstime p span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#app .jdms .mstime .times i {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: 700;
+    background-color: black;
+}
+
+#app .jdms .mstime .times .time_unit:after {
+    content: ":";
+    position: absolute;
+    top: -3px;
+    left: 36px;
+
+}
+
+#app .jdms .mstime .times .time_unit:nth-child(3)::after {
+    content: "";
+}
+
+#app .jdms .mstime .times {
+    font-size: 20px;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+#app .jdms .mslist {
+    position: relative;
+    width: 800px;
+    height: 260px;
+    overflow: hidden;
+}
+
+#app .jdms .mslist .mp {
+    position: absolute;
+    top: calc(50% - 25px);
+    width: 25px;
+    height: 35px;
+    color: white;
+    padding: 0px 0px 0px 5px;
+    line-height: 35px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .15);
+    z-index: 2;
+}
+
+#app .jdms .mslist .mp:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#app .jdms .mslist .bL {
+    left: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#app .jdms .mslist .bR {
+    right: 3px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#app .jdms .mslist ul li {
+    position: relative;
+    float: left;
+    width: 199.33px;
+    height: 260px;
+    padding-top: 30px;
+    border-right: 1px solid #f4f4f4;
+}
+
+
+#app .jdms .mslist ul li img {
+    margin-left: 30px;
+}
+
+#app .jdms .mslist ul li h6 {
+    width: 160px;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    margin: 13px auto;
+    transition: color .2s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    color: #333333;
+    cursor: pointer;
+}
+
+#app .jdms .mslist ul li h6:hover {
+    color: #c81623;
+}
+
+#app .jdms .mslist .msUl {
+    position: absolute;
+}
+
+#app .jdms .mslist .msUl ul {
+    float: left;
+}
+
+#app .jdms .mslist .msUl p {
+    width: 160px;
+    height: 24px;
+    margin: 0px auto;
+    line-height: 24px;
+    border: 1px solid #e1251b;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#app .jdms .mslist .msUl p span {
+    position: relative;
+    display: inline-block;
+    width: 92px;
+    height: 22px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    background-color: #e1251b;
+
+}
+
+/* 价格分割三角形 */
+#app .jdms .mslist .msUl p span::before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-color: transparent white transparent transparent;
+    border-style: solid;
+    border-width: 22px 8px 0 0;
+    position: absolute;
+    top: 0;
+    left: 84px;
+}
+
+#app .jdms .mslist .msUl p del {
+    display: inline-block;
+    width: 66px;
+    height: 22px;
+    color: #999999;
+    background-color: #fff;
+}
+
+#app .jdms .msban {
+    position: relative;
+    width: 200px;
+    height: 260px;
+    overflow: hidden;
+}
+
+#app .jdms .msban .db {
+    position: relative;
+    width: 180px;
+    height: 240px;
+    padding-top: 20px;
+    float: left;
+}
+
+#app .jdms .msban .db img {
+    margin-left: 25px;
+}
+
+#app .jdms .msban .db p {
+    text-align: center;
+}
+
+#app .jdms .msban .db .item1 {
+    color: #666;
+    font-size: 12px;
+}
+
+#app .jdms .msban .db .item2 {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+#app .jdms .msban .db .dbinfo {
+    color: #e1251b;
+    border-radius: 14px;
+    width: 82px;
+    height: 24px;
+    margin-left: 50px;
+    text-align: center;
+    display: inline-block;
+    line-height: 22px;
+    font-weight: 700;
+    padding-left: 4px;
+    font-size: 12px;
+    border: 1px solid #e1251b;
+    margin-top: 4px;
+    transition: background-color .2s ease;
+}
+
+#app .jdms .msban .db .iteminfo {
+    width: 100%;
+    height: 90px;
+    margin-top: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .5), rgba(220, 224, 236, .5));
+}
+
+#app .jdms .msban .db .dbinfo i {
+    font-size: 10px;
+}
+
+#app .jdms .msban .db .dbinfo:hover {
+    cursor: pointer;
+    background-color: #c81623;
+    color: #fbedee;
+}
+
+#app .jdms .msban .wban {
+    position: absolute;
+    margin-left: 10px;
+    top: 10px;
+}
+
+
+#app .jdms .msban .dbUl {
+    position: absolute;
+    bottom: 10px;
+    left: 85px;
+    width: 50px;
+    height: 15px;
+}
+
+#app .jdms .msban .dbUl li {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    line-height: 15px;
+    background-color: #999999;
+}
+
+#app .jdms .msban .dbUl .dbon {
+    background-color: #e1251b;
+}
+
+.zhezhao {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.2s;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.zhezhao:hover {
+    opacity: 0.2;
+}
+
+.zhezhao:hover {
+    cursor: pointer;
+}
+
+#jcore {
+    width: 1190px;
+    height: 340px;
+    margin: 20px auto;
+}
+
+#jcore .ji {
+    width: 590px;
+    height: 340px;
+    float: left;
+}
+
+#jcore .jInfo1 {
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+
+
+#jcore .jInfo1 .box_hd {
+    width: 590px;
+    height: 60px;
+    margin: auto;
+    padding: 0px 20px 0px 20px;
+}
+
+#jcore .jInfo1 .box1 {
+    display: block;
+}
+
+#jcore .jInfo1 .box2,
+#jcore .jInfo1 .box3,
+#jcore .jInfo1 .box4 {
+    display: none;
+}
+
+#jcore .jInfo1 .box_hd .ah {
+    display: inline-block;
+    position: relative;
+    height: 32px;
+    margin: 12px 0 0;
+    color: #666;
+}
+
+#jcore .jInfo1 .box_hd .ah:hover i {
+    color: #fff;
+    background-color: #c81623;
+}
+
+#jcore .jInfo1 .box_hd h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    line-height: 32px;
+}
+
+#jcore .jInfo1 .box_hd h3 i {
+    color: #e6473e;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#jcore .jInfo1 .box_hd ul li {
+    float: left;
+}
+
+#jcore .jInfo1 .box_hd ul {
+    float: right;
+    margin-top: 20px;
+}
+
+#jcore .jInfo1 .box_hd ul li a {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999999;
+    line-height: 19px;
+    padding-bottom: 2px;
+    margin-left: 13.5px;
+
+}
+
+#jcore .jInfo1 .box_hd .fitem {
+    color: #e1251b;
+    border-bottom: 2px solid #e1251b;
+}
+
+#jcore .jInfo1 .box_txt {
+    width: 560px;
+    height: 270px;
+    margin-left: 10px;
+}
+
+#jcore .jInfo1 .box_txt .boxmin {
+    position: relative;
+    width: 170px;
+    height: 265px;
+    float: left;
+    background-color: #f8f8f9;
+}
+
+#jcore .jInfo1 .box_txt .boxmin .btop {
+    width: 90px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    background: url(../img/hd.png) no-repeat;
+}
+
+#jcore .jInfo1 .box_txt .boxmin .img {
+    width: 170px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#jcore .jInfo1 .box_txt .boxmin .img img {
+    width: 120px;
+    height: 120px;
+}
+
+#jcore .jInfo1 .box_txt .boxmin .bfont {
+    text-align: center;
+}
+
+#jcore .jInfo1 .box_txt .boxmin .bfont h4 {
+    margin-top: 9px;
+    margin-bottom: 4px;
+    height: 19px;
+    line-height: 19px;
+    width: 150px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+#jcore .jInfo1 .box_txt .boxmin:hover {
+    color: #e5251b;
+}
+
+#jcore .jInfo1 .box_txt .boxmin .bfont p:nth-child(1) {
+    margin-top: 4px;
+}
+
+#jcore .jInfo1 .box_txt .boxmin .bfont p:nth-child(2) {
+    margin-top: 8px;
+}
+
+#jcore .jInfo1 .box_txt .boxmin .bfont p:nth-child(3) span {
+    color: #e5251b;
+}
+
+#jcore .jInfo1 .box_txt .bfont p {
+    color: #a5a5c1;
+    font-size: 12px;
+}
+
+#jcore .jInfo1 .box_txt .boxmin .bfont p .price {
+    color: #e5251b;
+    font-size: 18px;
+}
+
+
+#jcore .jInfo1 .box_txt .boxfor {
+    float: right;
+    width: 375px;
+    height: 265px;
+    padding: 20px 0px 0px 5px;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li {
+    width: 170px;
+    height: 89px;
+    float: left;
+    margin-left: 10px;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul .li3 {
+    margin-top: 48px;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li .img,
+#jcore .jInfo1 .box_txt .boxfor ul li .bfont {
+    float: left;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li .img {
+    position: relative;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li .img img {
+    width: 84px;
+    height: 84px;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li .img p {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    display: inline-block;
+    width: 84px;
+    height: 16px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 16px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .6);
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li .bfont {
+    width: 75px;
+    margin-left: 6px;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li:hover {
+    cursor: pointer;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li:hover .bfont .spanh {
+    color: #c81623;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li .bfont .spanh {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+    height: 32px;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li .bfont p span {
+    color: #e1251b;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li .bfont .hd_pri span {
+    font-size: 14px;
+    line-height: 16px;
+    color: #e1251b;
+    letter-spacing: 0;
+    margin-top: 5px;
+}
+
+#jcore .jInfo1 .box_txt .boxfor ul li .bfont .hd_pri del {
+    color: #999;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+
+
+
+#jcore .jInfo2 {
+    background-color: #ffffff;
+}
+
+#jcore .jInfo2 .box_hd .ah {
+    display: inline-block;
+    position: relative;
+    height: 32px;
+    margin: 12px 0 0;
+    color: #666;
+}
+
+#jcore .jInfo2 .box_hd .ah:hover i {
+    color: #fff;
+    background-color: #c81623;
+}
+
+#jcore .jInfo2 .box_hd h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    line-height: 32px;
+}
+
+#jcore .jInfo2 .box_hd h3 i {
+    color: #e6473e;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#jcore .jInfo2 .box_hd {
+    width: 590px;
+    height: 60px;
+    margin: auto;
+    padding: 0px 20px 0px 20px;
+}
+
+#jcore .jInfo2 .boximg {
+    position: relative;
+    width: 590px;
+    height: 272px;
+}
+
+#jcore .jInfo2 .boximg .oppo,
+#jcore .jInfo2 .boximg .jdsg {
+    float: left;
+}
+
+#jcore .jInfo2 .boximg .oppo {
+    width: 270px;
+    height: 265px;
+    margin-left: 15px;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    background-color: #fefafa;
+}
+
+#jcore .jInfo2 .boximg .oppo span {
+    font-size: 12px;
+    color: #6a6767;
+    margin-top: 8px;
+}
+
+#jcore .jInfo2 .boximg .oppo .opphone img {
+    width: 130px;
+    height: 130px;
+    margin-top: 10px;
+}
+
+#jcore .jInfo2 .boximg .jdsg {
+    position: absolute;
+    top: -35px;
+    right: 20px;
+    width: 270px;
+    height: 312px;
+}
+
+#jcore .jInfo2 .boximg .jdsg img {
+    width: 100px;
+    height: 50px;
+
+}
+
+#jcore .jInfo2 .boximg .jdsg h6 {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+}
+
+#jcore .jInfo2 .boximg .jdsg ul li {
+    width: 135px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 14px;
+
+}
+
+#findgood {
+    width: 1190px;
+    height: 260px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+#findgood .findone,
+#findgood .findban {
+    float: left;
+}
+
+#findgood .findban .findwrap {
+    display: flex;
+    position: absolute;
+    width: 2970px;
+}
+
+#findgood .findban .findwrap a {
+    flex: 1;
+}
+
+#findgood .scrollbar {
+    position: absolute;
+    bottom: 10px;
+    left: 1%;
+    width: 98%;
+    height: 2px;
+    z-index: 10;
+    background-color: #f4f4f4;
+    visibility: hidden;
+}
+
+#findgood .scrollbar span {
+    position: absolute;
+    bottom: -3px;
+    width: 70px;
+    height: 9px;
+    border-radius: 5px;
+    background-color: #d8d8d8;
+}
+
+#findgood .findone {
+    width: 190px;
+    height: 260px;
+    padding: 10px 10px 0 10px;
+    background: url("../img/find.png") no-repeat;
+}
+
+#findgood .findone .findbox {
+    position: relative;
+    width: 160px;
+    height: 90px;
+    color: rgba(255, 255, 255, .8);
+    font-size: 16px;
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/findfont.png);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+#findgood .findone .findbox .font {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+#findgood .findone:hover i {
+    background-color: #c81623;
+}
+
+#findgood .findone .font i {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#findgood .findban {
+    position: relative;
+    width: 990px;
+    height: 260px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+#findgood .findban .banf {
+    width: 150px;
+    height: 21px;
+    text-align: center;
+}
+
+#findgood .findban .banimg img {
+    width: 150px;
+    height: 150px;
+}
+
+#findgood .findban .banimg {
+    position: relative;
+}
+
+#findgood .findban a:nth-child(2n-1) {
+    display: inline-block;
+    width: 150px;
+    height: 181px;
+    margin-right: 40px;
+    margin-top: 50px;
+    vertical-align: top;
+}
+
+#findgood .findban a:hover {
+    color: #c81623;
+}
+
+#findgood .findban a:nth-child(2n-1) .banf {
+    margin-bottom: 10px;
+}
+
+#findgood .findban a:nth-child(2n) .banf {
+    margin-top: 10px;
+}
+
+#findgood .findban a:nth-child(2n) {
+    display: inline-block;
+    width: 150px;
+    height: 181px;
+    margin-right: 40px;
+    margin-top: 20px;
+    vertical-align: top;
+}
+
+#hpingdao {
+    width: 1190px;
+    height: 45px;
+    margin: 20px auto;
+}
+
+#hpingdao h3 {
+    position: relative;
+    width: 230px;
+    height: 45px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 30px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    color: #333;
+}
+
+#hpingdao .ftit::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url("../img/sprite.png");
+    background-position: -25px 0;
+    width: 25px;
+    height: 20px;
+    right: 0;
+}
+
+#hpingdao .ftit::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url("../img/sprite.png");
+    background-position: 0 0;
+    width: 25px;
+    height: 20px;
+    left: 0;
+}
+
+#lbwgc,
+#lbwgc2 {
+    width: 1190px;
+    height: 370px;
+    margin: auto;
+}
+
+.lbwgc .box {
+    position: relative;
+    width: 290px;
+    height: 370px;
+    float: left;
+}
+
+.lbwgc .box2,
+.lbwgc .box3,
+.lbwgc .box4 {
+    margin-left: 10px;
+}
+
+.lbwgc .box .boxtop,
+.lbwgc .box .boxbtm {
+    width: 290px;
+    height: 180px;
+    background-color: #ffffff;
+    padding: 30px 0px 0px 30px;
+}
+
+.lbwgc .box .boxbtm {
+    margin-top: 10px;
+}
+
+.lbwgc .box .boxft {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.lbwgc .box .boxft span:nth-child(1) {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+}
+
+.lbwgc .box .boxft span:nth-child(2) {
+    font-size: 14px;
+    color: #999;
+    margin-left: 5px;
+}
+
+.lbwgc .box .boximg {
+    margin-top: 10px;
+}
+
+.lbwgc .box .boximg a:nth-child(2) {
+    margin-left: 30px;
+}
+
+.lbwgc .box .boximg a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+#lbwgc2 {
+    margin-top: 10px;
+}
+
+#footer {
+    height: 390px;
+    margin-top: 10px;
+}
+
+#footer .fserver {
+    height: 103px;
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+#footer .fserver .fsinner {
+    width: 1190px;
+    height: 42px;
+    margin: auto;
+}
+
+#footer .fserver .fsinner ul li {
+    width: 297px;
+    height: 42px;
+    float: left;
+}
+
+
+#footer .fserver .fsinner ul li div {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 45px;
+    width: 225px;
+
+}
+
+#footer .fserver .fsinner ul li p {
+    overflow: hidden;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+}
+
+#footer .fserver .fsinner ul li h5 {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 42px;
+}
+
+#footer .fserver .fsinner ul li .duo h5 {
+    background: url("../img/jdbj.png") no-repeat 0 -192px;
+}
+
+#footer .fserver .fsinner ul li .kuai h5 {
+    background: url("../img/jdbj.png") no-repeat -41px -192px;
+}
+
+#footer .fserver .fsinner ul li .hao h5 {
+    background: url("../img/jdbj.png") no-repeat -82px -192px;
+}
+
+#footer .fserver .fsinner ul li .sheng h5 {
+    background: url("../img/jdbj.png") no-repeat -123px -192px;
+}
+
+#footer .modhelp {
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer .modhelp .modnav {
+    width: 1190px;
+    height: 190px;
+    border-bottom: 1px solid #e1e1e1;
+    margin: auto;
+}
+
+#footer .modhelp .modnav dl {
+    width: 198px;
+    float: left;
+}
+
+#footer .modhelp .modnav dl dt {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#footer .modhelp .modnav dl dd {
+    color: #666;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+#footer .modhelp .modnav dl dd a:hover {
+    color: #c81660;
+}
+
+#footer .endhelp {
+    width: 1190px;
+    height: 18px;
+    margin: auto;
+    text-align: center;
+    color: #666666;
+}
+
+#footer .endhelp p a:hover {
+    color: #c81623;
+}
+
+/* 以下是右边固定导航部分 */
+#ritNav {
+    position: absolute;
+    right: 280px;
+    top: 680px;
+    /* position: fixed;
+    top: 20px;
+    right: 280px; */
+    /* transition: 2s; */
+    background-color: #ffffff;
+    display: none;
+}
+
+#ritNav li {
+    width: 58px;
+    height: 60px;
+    margin: auto;
+    line-height: 19px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+#ritNav li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#ritNav li a:hover {
+    color: #fff;
+    background-color: #c81623;
+}
+
+#ritNav li span {
+    display: inline-block;
+    width: 28px;
+    height: 38px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#ritNav li a:nth-child(-n+6) {
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+
+
+
+/* 顶部隐藏导航栏样式 */
+#hidsech {
+    position: fixed;
+    top: -53px;
+    width: 100%;
+    z-index: 100;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid #f10214;
+    background-color: #ffffff;
+
+}
+
+#hidsech .searchi {
+    display: inline-block;
+    margin: auto;
+
+}
+
+.headw .searchInfo .searchi .searchtxt,
+.headw .searchInfo .searchi .car {
+    float: left;
+}
+
+.headw .searchInfo .searchi {
+    margin-top: 25px;
+    padding-left: 40px;
+}
+
+.headw .searchInfo .searchi .searchtxt {
+    position: relative;
+    border: 2px solid #e2231a;
+    width: 550px;
+    height: 36px;
+}
+
+.headw .searchInfo .searchi .searchtxt input {
+    text-indent: 1.2em;
+    border: none;
+    width: 480px;
+    height: 32px;
+    outline-style: none;
+}
+
+.headw .searchInfo .searchi .searchtxt span {
+    position: absolute;
+    right: 75px;
+    top: 3px;
+    font-size: 18px;
+    color: #c9c9c9;
+}
+
+.headw .searchInfo .searchi .searchtxt span:hover {
+    color: #d54c56;
+    cursor: pointer;
+}
+
+.headw .searchInfo .searchi .searchtxt i {
+    float: right;
+    width: 58px;
+    height: 32px;
+    font-weight: 700;
+    color: white;
+    padding: 3px 20px;
+    font-size: 18px;
+    background-color: #e1251b;
+}
+
+.headw .searchInfo .searchi .searchtxt i:hover {
+    cursor: pointer;
+    background-color: #c81623;
+    transition: 0.5s;
+}
+
+.headw .searchInfo .searchi .car {
+    position: relative;
+    width: 132px;
+    height: 37px;
+    margin-left: 20px;
+    padding: 6px 0px 0px 18px;
+    font-size: 12px;
+    color: #e3362d;
+    border: 1px solid #eeeeee;
+}
+
+.headw .searchInfo .searchi .car div {
+    margin-left: 0px;
+}
+
+.headw .searchInfo .searchi .car a {
+    margin-left: 12px;
+}
+
+.headw .searchInfo .searchi .car .c0 {
+    display: inline-block;
+    width: 18px;
+    position: absolute;
+    top: 1px;
+    left: 37px;
+    text-align: center;
+    padding: 1px 3px;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 12px;
+    color: #fff;
+    background-color: #e1251b;
+    border-radius: 7px;
+    min-width: 12px;
+    text-align: center;
+}
+
+.headw .searchInfo .searchi .car:hover {
+    border: 1px solid #c81623;
+}
+
+.headw .searchInfo .searchi .car:hover .car-2 {
+    display: block;
+}
+
+.headw .searchInfo .searchi .car .car-2 {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: -1px;
+    width: 310px;
+    height: 70px;
+    background: #ffffff url("../img/kongche.png") no-repeat 30px 10px;
+    border: 1px solid #c81623;
+    border-top: none;
+    z-index: 2;
+}
+
+.headw .searchInfo .searchi .car .car-2 p {
+    color: #999999;
+    margin: 30px 0px 0px 84px;
+}
+
+.headw .searchInfo .searchi .spro a {
+    font-size: 12px;
+    color: #999;
+    margin-right: 10px;
+}
+
+.headw .searchInfo .searchi .spro a:hover {
+    color: #e1251b;
+}
+
+/* 新平首发样式 */
+#J_core {
+    display: flex;
+    justify-content: space-between;
+    width: 1190px;
+    height: 340px;
+    margin: 20px auto 0;
+}
+
+#J_core>div {
+    width: 290px;
+    height: 100%;
+    background: #ffffff;
+}
+
+#J_core>div:nth-child(1) {
+    background: #ffffff url("../img/boxbanbg.png") no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#J_core>div .boxhd {
+    height: 60px;
+    padding: 0 20px;
+}
+
+#J_core>div .boxhd a {
+    display: inline-block;
+    height: 32px;
+    margin: 12px 0 0;
+}
+
+#J_core>div .boxhd a h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    line-height: 32px;
+}
+
+#J_core .J_newArrival .boxbd {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+#J_core .J_newArrival .boxbd>p {
+    position: absolute;
+    top: calc(50% - 25px);
+    width: 25px;
+    height: 35px;
+    color: white;
+    padding: 0px 0px 0px 5px;
+    line-height: 35px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+#J_core .J_newArrival .boxbd>p:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#J_core .J_newArrival .boxbd .bL {
+    left: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#J_core .J_newArrival .boxbd .bR {
+    right: 0;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#J_core .J_newArrival .boxbanner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem {
+    position: absolute;
+    top: 0;
+    width: 130px;
+    height: 246px;
+    transition: all .4s ease;
+    transform: scale(.8);
+    transform-origin: center center;
+    box-sizing: content-box;
+}
+
+#J_core .J_newArrival .boxbanner .show {
+    transform: scale(1);
+}
+
+#J_core .J_newArrival .boxbanner .show .boxmsg {
+    opacity: 1;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem:nth-child(1) {
+    left: -50px;
+
+}
+
+#J_core .J_newArrival .boxbanner .boxitem:nth-child(2) {
+    left: 80px;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem:nth-child(3) {
+    left: 210px;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem:nth-child(4) {
+    left: 340px;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem:nth-child(5) {
+    left: 470px;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem:nth-child(6) {
+    left: 600px;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem:nth-child(7) {
+    left: 730px;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem:nth-child(8) {
+    left: 860px;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem a {
+    display: inline-block;
+    width: 100%;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem img {
+    width: 130px;
+}
+
+#J_core .boxbanner .boxmsg {
+    height: 86px;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem .boxmsg p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#J_core .J_newArrival .boxbanner .zhezhao:hover p {
+    color: #d65763;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem .boxmsg p:nth-child(1) {
+    width: 200px;
+    margin-left: -30px;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem .msgprice .dollar_txt {
+    font-size: 12px;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem .boxmsg .msgname {
+    line-height: 38px;
+    font-size: 14px;
+    color: #333;
+    transition: color .2s ease;
+    font-family: Microsoft Yahei, PingFangSC-Medium, sans-serif, serif;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem .boxmsg .msgdesc {
+    line-height: 16px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-family: Microsoft Yahei, PingFangSC-Medium, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif, serif;
+    color: #999;
+}
+
+#J_core .J_newArrival .boxbanner .boxitem .boxmsg .msgprice {
+    margin-top: 20px;
+    font-family: Arial-BoldMT, Microsoft Yahei, PingFangSC-Medium, sans-serif, serif;
+    font-size: 18px;
+    color: #e1251b;
+    letter-spacing: 0;
+}
+
+/* 排行榜样式部分 */
+#J_core .J_top .box_bd .tab_hd {
+    height: 25px;
+    width: 280px;
+    margin: auto;
+}
+
+#J_core .J_top .box_bd .tab_hd ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#J_core .J_top .box_bd .tab_hd ul .current {
+    background: #e1251b;
+    color: #fff;
+}
+
+#J_core .J_top .box_bd .tab_hd ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#J_core .J_top .box_bd .tab_hd ul li {
+    width: 62px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    color: #999999;
+    text-align: center;
+}
+
+#J_core .J_top .box_bd .tab_bd ul li {
+    position: relative;
+    width: 260px;
+    margin: 8px auto 0;
+}
+
+#J_core .J_top .box_bd .tab_bd a>div {
+    float: left;
+}
+
+#J_core .J_top .box_bd .tab_bd li:nth-child(1) .ranknum {
+    background: url(../img/top1.png) no-repeat;
+    background-size: cover;
+}
+
+#J_core .J_top .box_bd .tab_bd li:nth-child(2) .ranknum {
+    background: url(../img/top2.png) no-repeat;
+    background-size: cover;
+}
+
+#J_core .J_top .box_bd .tab_bd li:nth-child(3) .ranknum {
+    background: url(../img/top3.png) no-repeat;
+    background-size: cover;
+}
+
+#J_core .J_top .box_bd .tab_bd .ranknum {
+    width: 28.8px;
+    height: 40.8px;
+    margin-top: 13px;
+
+}
+
+#J_core .J_top .box_bd .tab_bd .top1 {
+    color: #e6ac36;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#J_core .J_top .box_bd .tab_bd .top2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+}
+
+#J_core .J_top .box_bd .tab_bd .lazyimg {
+    margin-left: 10px;
+}
+
+#J_core .J_top .box_bd .tab_bd .lazyimg img {
+    width: 70px;
+}
+
+#J_core .J_top .box_bd .tab_bd .lazytxt {
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    width: 140px;
+    max-height: 2.6em;
+    line-height: 1.3em;
+    font-size: 14px;
+    word-break: break-all;
+    transform: translateY(-50%);
+    color: #333;
+    overflow: hidden;
+    transition: all .2s ease;
+    font-family: Microsoft Yahei, PingFangSC-Medium, sans-serif, serif;
+}
+
+#J_core .J_top .box_bd .tab_bd .lazytxt:hover {
+    color: #c81623;
+}
+
+#J_core .J_top .box_bd .tab_bd>div {
+    display: none;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop {
+    height: 266px;
+    padding: 0 15px;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop>a {
+    position: relative;
+    display: block;
+    width: 260px;
+    height: 128px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 15px 12px 15px 15px;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop>a>div {
+    float: left;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop .ltxt {
+    width: 120px;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop .rimg {
+    margin-left: 10px;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop .ltxt p:nth-child(1) {
+    max-height: 38px;
+    line-height: 1.3em;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop .ltxt p:nth-child(2) {
+    display: inline-block;
+    color: #596fab;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 0 2px;
+    height: 18px;
+    line-height: 17px;
+    box-sizing: border-box;
+    border: 1px solid #596fab;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop .ltxt span {
+    color: #999;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop>a>div img {
+    width: 100px;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop .shop1 {
+
+    background: url(../img/shop1.png) no-repeat;
+}
+
+#J_core .J_niceshop .boxbd .nice_shop .shop2 {
+
+
+    background: url(../img/shop2.png) no-repeat;
+}
+
+#J_core .J_coupon .boxbd {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    background: url(../img/lqzx.png) no-repeat;
+}
+
+#J_core .J_coupon .boxbd a:hover .moretxt,
+#J_core .J_coupon .boxbd a:hover .moreic {
+    color: #c81623;
+}
+
+#J_core .J_coupon .boxbd>a {
+    display: block;
+    width: 260px;
+    height: 82px;
+    margin: 0 auto 5px;
+    box-sizing: content-box;
+}
+
+#J_core .J_coupon .boxbd>a>div {
+    float: left;
+}
+
+#J_core .J_coupon .boxbd .cleft {
+    width: 220px;
+    height: 100%;
+}
+
+#J_core .J_coupon .boxbd .cleft .cimg img {
+    width: 50px;
+}
+
+#J_core .J_coupon .boxbd .cleft .cimg {
+    float: left;
+    margin: 8px 0 0 7px;
+    width: 66px;
+    height: 66px;
+    padding: 8px;
+    border-radius: 50%;
+    background: #fff !important;
+    overflow: hidden;
+}
+
+#J_core .J_coupon .boxbd .cleft .ctxt {
+    float: left;
+    width: 140px;
+    height: 75px;
+    padding-left: 10px;
+}
+
+#J_core .J_coupon .boxbd .cleft .ctxt>div {
+    margin-top: 2px;
+}
+
+#J_core .J_coupon .boxbd .cleft .ctxt .modprice {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #e33333;
+    font-weight: 700;
+}
+
+#J_core .J_coupon .boxbd .cleft .ctxt .limit,
+#J_core .J_coupon .boxbd .cleft .ctxt .desc {
+    font-size: 12px;
+    line-height: 18px;
+    height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #999;
+}
+
+#J_core .J_coupon .boxbd .cleft .ctxt .modprice i {
+    font-weight: 400;
+    font-style: normal;
+}
+
+#J_core .J_coupon .boxbd .cleft .ctxt .modprice span {
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+#J_core .J_coupon .boxbd .cmore {
+    position: absolute;
+    line-height: 82px;
+    margin-right: 32px;
+    font-size: 12px;
+    color: #666;
+    top: 0;
+    right: 15px;
+}
+
+#J_core .J_coupon .boxbd .moretxt {
+    display: inline-block;
+    width: 1px;
+    line-height: 15px;
+    vertical-align: middle;
+}
+
+#J_core .J_coupon .boxbd .moreic {
+    height: 82px;
+    position: absolute;
+    right: -28px;
+    top: 0;
+    font-family: iconfont, sans-serif;
+}

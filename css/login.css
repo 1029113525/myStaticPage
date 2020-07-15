@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /* IE 6 7 专有*/
+    *zoom: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+i {
+    font-style: normal;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    /* 为了兼容低版本浏览器，如果外面包含了链接会有边框问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle;
+}
+
+body {
+    font: 12px/1.5 Microsoft YaHei, sans-serif;
+    background-color: #ffffff;
+}
+
+#header {
+    width: 100%;
+}
+
+#header .logtit {
+    width: 990px;
+    height: 60px;
+    margin: 15px auto 8px;
+}
+
+#header .logtit h1 {
+    display: inline-block;
+    line-height: 60px;
+    font-weight: 400;
+    margin: 8px 0 0 20px;
+}
+
+#header .logtit img {
+    width: 170px;
+    height: 60px;
+    vertical-align: top;
+}
+
+#header .logtit .logleft {
+    float: left;
+}
+
+#header .logtit .logright {
+    float: right;
+    height: 60px;
+}
+
+#header .logtit .logright .login-bg {
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    background: url("../img/q-icon.png");
+    margin-top: 43px;
+    vertical-align: bottom;
+}
+
+#header .logtit .logright a {
+
+    color: #999999;
+}
+
+#header .logtit .logright a:hover {
+    color: #e4393c;
+    text-decoration: underline;
+}
+
+#warning {
+    width: 100%;
+    height: 40px;
+    background-color: #fff8f0;
+}
+
+#warning .wartxt {
+    width: 990px;
+    margin: auto;
+    line-height: 40px;
+    text-align: center;
+    color: #9f9f9e;
+}
+
+.icon-gantanhao {
+    font-size: 20px;
+    font-weight: 700;
+    vertical-align: bottom;
+}
+
+#warning .wartxt span a {
+    color: black;
+}
+
+#warning .wartxt span a:hover {
+    text-decoration: underline;
+}
+
+#warp {
+    height: 475px;
+    background: #e93854;
+}
+
+#warp .login {
+    position: relative;
+    width: 990px;
+    height: 100%;
+    margin: auto;
+    background: url("../img/loginbc.png") #e93854 no-repeat;
+}
+
+#warp .login .logintxt {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 346px;
+    padding-bottom: 11px;
+    background-color: #ffffff;
+}
+
+#warp .login .logintxt .l_head {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    color: #9f9f9e;
+    text-align: center;
+    background-color: #fff8f0;
+}
+
+#warp .login .logintxt .l_method {
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+#warp .login .logintxt .l_method a {
+    display: inline-block;
+    width: 171px;
+    height: 18px;
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#warp .login .logintxt .l_method a:nth-child(1) {
+    border-right: 1px solid #f4f4f4;
+    box-sizing: border-box;
+
+}
+
+#warp .login .logintxt .l_method .current {
+    font-weight: 700;
+    color: #e4393c;
+}
+
+#warp .login .logintxt .l_method a:hover {
+    font-weight: 700;
+    color: #e4393c;
+}
+
+/* 账号登录样式 */
+#warp .login .logintxt .l_input {
+    display: none;
+    padding: 10px 20px;
+}
+
+#warp .login .logintxt .l_input .i_user,
+#warp .login .logintxt .l_input .i_pwd {
+    width: 308px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#warp .login .logintxt .l_input .icput {
+    width: 39px;
+    height: 38px;
+    float: left;
+    border: 1px solid #bdbdbd;
+    border-right: none;
+}
+
+#warp .login .logintxt .l_input .i_user label:nth-child(1) {
+    background: url("../img/pwd-icons-new.png") no-repeat 0px 0px;
+}
+
+#warp .login .logintxt .l_input .i_pwd label:nth-child(1) {
+    background: url("../img/pwd-icons-new.png") no-repeat -48px 0px;
+}
+
+#warp .login .logintxt .l_input .i_user input,
+#warp .login .logintxt .l_input .i_pwd input {
+    float: left;
+    width: 266px;
+    height: 38px;
+    outline: none;
+    text-indent: 1em;
+    font-size: 14px;
+    font-family: '\5b8b\4f53';
+    color: #999999;
+    border: 1px solid #bdbdbd;
+}
+
+#warp .login .logintxt .l_input .l_selpwd {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#warp .login .logintxt .l_input .l_selpwd a:hover {
+    color: #e4393c;
+    text-decoration: underline;
+}
+
+#warp .login .logintxt .l_input .logbtn {
+    width: 100%;
+    height: 34px;
+    background-color: #e4393c;
+    line-height: 31px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+    font-family: 'Microsoft YaHei';
+}
+
+/* 扫码登录样式 */
+.l_erwm {
+    text-align: center;
+}
+
+.l_erwm>div {
+    margin-top: 20px;
+}
+
+.l_erwm .erwmimg {
+    position: relative;
+    width: 100%;
+    height: 165px;
+}
+
+.l_erwm .erwmimg .img {
+    display: inline-block;
+    position: absolute;
+    left: 95px;
+    padding: 8px;
+    border: 1px solid #f4f4f4;
+    transition: .3s ease-out;
+
+}
+
+/* .l_erwm .erwmimg:hover .img{
+    left: 15px;
+} */
+.l_erwm .erwmimg .erwmbg {
+    position: absolute;
+    right: 20px;
+    width: 141px;
+    height: 168px;
+    vertical-align: middle;
+    background: url("../img/phone-orange.png") no-repeat;
+    opacity: 0;
+    transition: .3s ease-out;
+}
+
+.l_erwm .erwmimg img {
+    width: 147px;
+}
+
+.erwm_tishi span {
+    margin-left: 12px;
+    color: #666;
+}
+
+.erwm_tishi span a {
+    color: #e4393c;
+}
+
+.erwm_list li {
+    float: left;
+    margin-left: 20px;
+    color: #9999a6;
+}
+
+.erwm_list {
+    padding-left: 45px;
+}
+
+.erwm_list li i {
+    font-size: 20px;
+    color: #cccccc;
+    margin-right: 5px;
+}
+
+#warp .login .logintxt .logfoot {
+    padding: 10px 20px 0px;
+    border-top: 1px solid #f4f4f4;
+    margin-top: 20px;
+}
+
+#warp .login .logintxt .logfoot .f_left {
+    float: left;
+}
+
+#warp .login .logintxt .logfoot .f_left .icon-qq {
+    color: #10a8ff;
+    vertical-align: middle;
+}
+
+#warp .login .logintxt .logfoot a:hover {
+    color: #e63974;
+}
+
+#warp .login .logintxt .logfoot .f_left a:nth-child(1)::after {
+    content: "|";
+    margin-left: 10px;
+    color: #cfdaeb;
+    cursor: default;
+}
+
+#warp .login .logintxt .logfoot .f_left .icon-weixin1 {
+    color: #00cc00;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+#warp .login .logintxt .logfoot .f_left span {
+    margin-left: 3px;
+}
+
+#warp .login .logintxt .logfoot .f_right {
+    float: right;
+}
+
+#warp .login .logintxt .logfoot .f_right i {
+    font-size: 20px;
+}
+
+#warp .login .logintxt .logfoot .f_right span {
+    font-size: 14px;
+}
+
+#warp .login .logintxt .logfoot .f_right .iconfont {
+    vertical-align: middle;
+}
+
+#foot {
+    margin-top: 24px;
+    text-align: center;
+    color: #666666;
+}
+
+#foot a:hover {
+    color: #e63974;
+}
+
+#foot a {
+    margin: 0 15px 0;
+}
